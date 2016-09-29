@@ -1,0 +1,23 @@
+.jumbotron {
+	background-color: #4b0082;
+	color: #fff;
+    padding: 80px 25px;
+}
+.container-fluid {
+    padding: 20px 50px;
+}
+.container-fluid img {
+    margin-right: 30px;
+    float: left;
+}
+a:link {
+    padding: 20px 45px;
+    text-align: center;
+	border-radius: 25px;
+	margin:20px;
+	
+}
+.spaced {
+	padding: 30px;
+}
+
