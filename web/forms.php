@@ -1,11 +1,18 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Confirmation Page</title>
-            </head>
-	<body >
-		Name: <?php echo $_POST["name"]; ?><br>
-		Email: <?php echo $_POST["email"]; ?><br>
-		Major: <?php echo $_POST["major"]; ?><br>
-		Comments: <?php echo $_POST["comment"]; ?><br>
-	</body>
+<head>
+	<title>Confirmation Page</title>
+</head>
+<body>
+	<strong>Name: </strong> <?php echo $_POST["name"]; ?><br />
+	<strong>Email: </strong> <?php echo $_POST["email"]; ?><br />
+	<strong>Major: </strong> <?php echo $_POST["major"]; ?><br />
+	<strong>Places: </strong> <? $place = $_POST["continent"];
+	$N = count($place);
+	for($i = 0; $i < $N; $i++){
+		echo htmlspecialchars($place[$i] ). " ";    
+	}
+	?><br />
+	<strong>Comments: </strong> <?php echo $_POST["comment"]; ?><br />
+</body>
 </html>
